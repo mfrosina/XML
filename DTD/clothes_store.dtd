@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT clothes-store (store-info, categories, products, staff)>
+<!ELEMENT store-info (store-name, location, store-contact?, (opening-hours)+)>
+<!ATTLIST store-info id ID #REQUIRED
+                    established CDATA #IMPLIED>
+<!ELEMENT store-name (#PCDATA)>
+<!ELEMENT location (street, city, country)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ATTLIST city zip CDATA #REQUIRED>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT store-contact (store-email, store-phone*, website?)>
+<!ELEMENT store-email (#PCDATA)>
+<!ELEMENT store-phone (#PCDATA)>
+<!ELEMENT website EMPTY>
+<!ATTLIST website uri CDATA #REQUIRED>
+<!ELEMENT opening-hours (weekday, time)>
+<!ELEMENT weekday (#PCDATA)>
+<!ELEMENT time (start, end)>
+<!ELEMENT start (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+
+<!ELEMENT categories (category+)>
+<!ELEMENT category (subcategory+)>
+<!ATTLIST category id ID #REQUIRED
+                    name (Дамско | Мъжко | Детско) #REQUIRED>
+<!ELEMENT subcategory EMPTY>
+<!ATTLIST subcategory id ID #REQUIRED
+                       name CDATA #REQUIRED>
+
+<!ELEMENT products (product+)>
+<!ELEMENT product (name, description, price, sizes, colors, product-category, product-subcategory, material, rating?, photo+)>
+<!ATTLIST product id ID #REQUIRED
+                     stock CDATA #REQUIRED
+                     clearance (true | false) "false">
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>                  
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency (EUR | BGN) "BGN">
+<!ELEMENT sizes (size+)>
+<!ATTLIST sizes type (int | eu) #REQUIRED>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT colors (color+)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT product-category EMPTY>
+<!ATTLIST product-category ref IDREF #REQUIRED>
+<!ELEMENT product-subcategory EMPTY>
+<!ATTLIST product-subcategory ref IDREF #REQUIRED>
+<!ELEMENT material (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT photo EMPTY>
+<!ATTLIST photo uri CDATA #REQUIRED>
+
+<!ELEMENT staff (member+)>
+<!ELEMENT member (member-name, gender, member-contact, hire-date, birth-date?, responsibilities)>
+<!ATTLIST member id ID #REQUIRED
+                    role CDATA #REQUIRED
+                    experience CDATA #IMPLIED>
+        <!ELEMENT member-name (first,last)>
+        <!ELEMENT first (#PCDATA)>
+        <!ELEMENT last (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT member-contact (email*,phone)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT hire-date (#PCDATA)>
+<!ELEMENT birth-date (#PCDATA)>
+<!ELEMENT responsibilities (responsibility+)>
+<!ELEMENT responsibility (#PCDATA)>

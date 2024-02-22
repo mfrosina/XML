@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clothes-store SYSTEM "clothes_store.dtd">
+
+<clothes-store>
+    <!-- Shop Information -->
+    <store-info id="CS-697888" established="2000">
+     <store-name>DuttiPrada</store-name>
+        <location>
+            <street>Bulgaria Boulevard 58</street>
+            <city zip="1000">Sofia</city>
+            <country>Bulgaria</country>
+        </location>
+        <store-contact>
+            <store-email>info@duttiprada.com</store-email>
+            <store-phone>+1 202 555 0196</store-phone>
+            <website uri="https://duttiprada.com" />
+        </store-contact>
+        <opening-hours>
+            <weekday>Monday-Friday</weekday>
+            <time>
+                <start>9AM</start>
+                <end>8PM</end>
+            </time>
+        </opening-hours>
+        <opening-hours>
+            <weekday>Saturday-Sunday</weekday>
+            <time>
+                <start>10AM</start>
+                <end>6PM</end>
+            </time>
+        </opening-hours>
+    </store-info>
+
+<categories>
+        <category id="C1" name="Дамско">
+            <subcategory id="C1.1" name="Dresses" />
+            <subcategory id="C1.2" name="Tops" />
+            <subcategory id="C1.3" name="Bottoms" />
+            <subcategory id="C1.4" name="Accessories" />
+        </category>
+        <category id="C2" name="Мъжко">
+            <subcategory id="C2.1" name="Tops" />
+            <subcategory id="C2.2" name="Bottoms" />
+            <subcategory id="C2.3" name="Accessories" />
+        </category>
+    </categories>
+
+    <!-- Products -->
+    <products>
+        <product id="C001" stock="50">
+            <name>Summer Dress</name>
+            <description>Light and comfortable dress for summer days.</description>
+            <!-- Currency is required attribute , it can be BGN,EUR, by default is BGN -->
+            <price>149.99</price>
+            <!-- Type can be international(int)-xs,s,m... & eu(32,34,36...) it is a required attribute -->
+            <sizes type="int">
+                <size>XS</size>
+                <size>S</size>
+                <size>M</size>
+            </sizes>
+            <colors>
+                <color>Blue</color>
+                <color>Green</color>
+            </colors>
+            <product-category ref="C1" />
+            <product-subcategory ref="C1.1" />
+            <material>Cotton</material>
+            <rating>4.5</rating>
+            <photo uri="https://example.com/pics/summerdress.jpg" />
+        </product>
+        
+        <product id="C002" stock="30" clearance="true">
+            <name>Formal Shirt</name>
+            <description>Crisp and elegant shirt for formal occasions.</description>
+            <price currency="EUR">80.99</price>
+            <sizes type="eu">
+                <size>36</size>
+                <size>38</size>
+                <size>40</size>
+                <size>44</size>
+            </sizes>
+            <colors>
+                <color>White</color>
+                <color>Gray</color>
+            </colors>
+            <product-category ref="C2" />
+            <product-subcategory ref="C2.1" />
+            <material>Polyester</material>
+            <rating>4.2</rating>
+            <photo uri="https://example.com/pics/mensformalshirt.jpg" />
+        </product>
+        <!-- Should add more clothing products with additional details -->
+    </products>
+    
+    <!-- Staff Members -->
+    <staff>
+        <member id="ST001" role="Store Manager" experience="5 years">
+            <member-name>
+                <first>Emily</first>
+                <last>Johnson</last>
+            </member-name>
+            <gender>F</gender>
+            <member-contact>
+                <email>emily.johnson@duttiprada.com</email>
+                <phone>555-8765-4321</phone>
+            </member-contact>
+            <hire-date>2021-12-01</hire-date>
+            <birth-date>1988-05-20</birth-date>
+            <responsibilities>
+                <responsibility>Overseeing daily store operations</responsibility>
+                <responsibility>Managing inventory and stock levels</responsibility>
+                <responsibility>Customer service and satisfaction</responsibility>
+            </responsibilities>
+        </member>
+        <!-- Should add more staff members with additional details -->
+    </staff>
+</clothes-store>
