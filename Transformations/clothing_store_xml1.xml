@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><clothes-store>
+    <store-info id="CS-697888" established="2000">
+        <store-name>ДътиПрада</store-name>
+        <location>
+            <street>булевард "България" 58</street>
+            <city zip="1000">София</city>
+            <country>България</country>
+        </location>
+        <store-contact>
+            <store-email>info@duttiprada.com</store-email>
+            <store-phone>+1 202 555 0196</store-phone>
+            <website uri="https://duttiprada.com"/>
+        </store-contact>
+        <opening-hours>
+            <weekday>Понеделник-Петък</weekday>
+            <time>
+                <start>09:00</start>
+                <end>20:00</end>
+            </time>
+        </opening-hours>
+        <opening-hours>
+            <weekday>Събота-Неделя</weekday>
+            <time>
+                <start>10:00</start>
+                <end>18:00</end>
+            </time>
+        </opening-hours>
+    </store-info>
+    <categories>
+        <category id="C1" name="Дамско">
+            <subcategory id="C1.1" name="Рокли"/>
+            <subcategory id="C1.2" name="Блузи"/>
+            <subcategory id="C1.3" name="Панталони"/>
+            <subcategory id="C1.4" name="Аксесоари"/>
+        </category>
+        <category id="C2" name="Мъжко">
+            <subcategory id="C2.1" name="Блузи"/>
+            <subcategory id="C2.2" name="Панталони"/>
+            <subcategory id="C2.3" name="Аксесоари"/>
+        </category>
+    </categories>
+    <products>
+        <product id="C001" stock="25" clearance="false">
+            <name>Кежуъл Блуза</name>
+            <description>Свободна и удобна блуза за ежедневно обличане.</description>
+            <price currency="BGN">69.99</price>
+            <sizes type="int">
+                <size>M</size>
+                <size>L</size>
+                <size>XL</size>
+            </sizes>
+            <colors>
+                <size>Бяло</size>
+                <size>Синьо</size>
+            </colors>
+            <product-category ref="C1"/>
+            <product-subcategory ref="C1.2"/>
+            <photo uri="images/prod_1.jpg"/>
+        </product>
+        <product id="C002" stock="30" clearance="true">
+            <name>Официална Риза</name>
+            <description>Стегната и елегантна риза за официални поводи.</description>
+            <price currency="EUR">80.99</price>
+            <sizes type="eu">
+                <size>36</size>
+                <size>38</size>
+                <size>40</size>
+                <size>44</size>
+            </sizes>
+            <colors>
+                <size>Бяло</size>
+                <size>Сиво</size>
+            </colors>
+            <product-category ref="C2"/>
+            <product-subcategory ref="C2.1"/>
+            <photo uri="images/prod_2.jpg"/>
+        </product>
+        <product id="C003" stock="20" clearance="false">
+            <name>Анцуг</name>
+            <description>Удобен анцуг за всекидневна употреба.</description>
+            <price currency="BGN">49.99</price>
+            <sizes type="eu">
+                <size>38</size>
+                <size>39</size>
+                <size>40</size>
+                <size>41</size>
+            </sizes>
+            <colors>
+                <size>Черно</size>
+                <size>Кафяво</size>
+            </colors>
+            <product-category ref="C2"/>
+            <product-subcategory ref="C2.2"/>
+            <photo uri="images/prod_3.jpg"/>
+        </product>
+        <product id="C004" stock="15" clearance="false">
+            <name>Елегантна Рокля</name>
+            <description>Стилна рокля за специални събития.</description>
+            <price currency="BGN">199.99</price>
+            <sizes type="int">
+                <size>S</size>
+                <size>M</size>
+                <size>L</size>
+            </sizes>
+            <colors>
+                <size>Червено</size>
+                <size>Черно</size>
+            </colors>
+            <product-category ref="C1"/>
+            <product-subcategory ref="C1.1"/>
+            <photo uri="images/prod_4.jpg"/>
+        </product>
+    </products>
+</clothes-store>

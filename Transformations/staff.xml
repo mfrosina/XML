@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><clothes-store>
+    <store-info id="CS-999999" established="2023">
+        <store-name>Елит</store-name>
+        <location>
+            <street>улица "Весела" 456</street>
+            <city zip="3000">София</city>
+            <country>България</country>
+        </location>
+        <store-contact>
+            <store-email>info@elitte.com</store-email>
+            <store-phone/>
+            <website uri="https://elitte.com"/>
+        </store-contact>
+    </store-info>
+    <staff>
+        <member id="M001" role="Мениджър на Магазина" experience="8 години">
+            <member-name>
+                <first>Иван</first>
+                <last>Петров</last>
+            </member-name>
+            <gender>М</gender>
+            <member-contact>
+                <email>ivan.petrov@elitte.com</email>
+                <phone>+359 888 987 654</phone>
+            </member-contact>
+            <hire-date>2017-05-15</hire-date>
+            <birth-date>1985-03-10</birth-date>
+            <responsibilities>
+                <responsibility>Управление на ежедневната дейност на магазина</responsibility>
+                <responsibility>Координация на персонала</responsibility>
+                <responsibility>Планиране на инвентара и новите колекции</responsibility>
+            </responsibilities>
+        </member>
+        <member id="S001" role="Продавач" experience="3 години">
+            <member-name>
+                <first>Мария</first>
+                <last>Иванова</last>
+            </member-name>
+            <gender>Ж</gender>
+            <member-contact>
+                <email>maria.ivanova@elitte.com</email>
+                <phone>+359 888 111 222</phone>
+            </member-contact>
+            <hire-date>2020-02-20</hire-date>
+            <birth-date>1992-08-25</birth-date>
+            <responsibilities>
+                <responsibility>Обслужване на клиенти и консултиране</responsibility>
+                <responsibility>Подръжка на подреденост в зоната за продажби</responsibility>
+                <responsibility>Помощ при избор на стил и размер</responsibility>
+            </responsibilities>
+        </member>
+        <member id="S002" role="Продавач" experience="2 години">
+            <member-name>
+                <first>Георги</first>
+                <last>Петров</last>
+            </member-name>
+            <gender>М</gender>
+            <member-contact>
+                <email>georgi.petrov@elitte.com</email>
+                <phone>+359 888 333 444</phone>
+            </member-contact>
+            <hire-date>2021-04-10</hire-date>
+            <birth-date>1995-11-15</birth-date>
+            <responsibilities>
+                <responsibility>Обслужване на клиенти и консултиране</responsibility>
+                <responsibility>Подръжка на чистота в магазина</responsibility>
+                <responsibility>Аранжиране на витрините</responsibility>
+            </responsibilities>
+        </member>
+        <member id="C001" role="Чистач" experience="1 година">
+            <member-name>
+                <first>Анна</first>
+                <last>Костадинова</last>
+            </member-name>
+            <gender>Ж</gender>
+            <member-contact>
+                <email>anna.kostadinova@elitte.com</email>
+                <phone>+359 888 555 666</phone>
+            </member-contact>
+            <hire-date>2022-09-05</hire-date>
+            <birth-date>1980-12-03</birth-date>
+            <responsibilities>
+                <responsibility>Поддържане на чистотата в целия магазин</responsibility>
+                <responsibility>Изхвърляне на отпадъци и рециклиране</responsibility>
+                <responsibility>Помощ при подръжка на склада</responsibility>
+            </responsibilities>
+        </member>
+    </staff>
+</clothes-store>
